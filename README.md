@@ -22,7 +22,8 @@ DLL files contains executable code that can be used by other applications. When 
      
       Click [ OK ] for apply filters.
 ```
-     
+![Procmon](https://github.com/NayanDZ/DLLHijacking/blob/main/1.jpg)
+  
 > **Step-2: Closed the application and Re-open that application so all the process according to filter will show in** ***Procmon***  
 
 > **Step-3: Now find the Dlls which are trying to load from current working application and is not available** ***(e.g: VERSION.DLL)*** 
