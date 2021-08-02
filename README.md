@@ -47,7 +47,7 @@ DLL files contains executable code that can be used by other applications. When 
     ``
    Done..! 
 
-> **Step-6: Reverse shell handler created, now paste malicious DLL(created through Step-4) in to the application directory and launch application **
+> **Step-6: Reverse shell handler created, now paste malicious DLL(created through Step-4) in to the application directory and launch application**
 
-As you can see application is trying to loan the malicious DLL without checking it and we got system reverse shell.
+   As you can see application is trying to loan the malicious DLL without checking it and we got system reverse shell.
 
