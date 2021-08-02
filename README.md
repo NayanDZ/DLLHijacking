@@ -28,7 +28,7 @@ DLL files contains executable code that can be used by other applications. When 
 
 > **Step-3: Now find the Dlls which are trying to load from current working application but is not available** ***(e.g: VERSION.DLL)***
 
-![Procmon](https://github.com/NayanDZ/DLLHijacking/blob/main/2.jpg) 
+![Procmon](https://github.com/NayanDZ/DLLHijacking/blob/main/3.jpg) 
             Application is trying to load VERSION.DLL but not able to find in to application directory.
             
 > **Step-4: Next step is create malicious DLL named VERSION.DLL using** ***MsfVenom (Kali Linux)***
