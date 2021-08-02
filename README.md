@@ -15,11 +15,14 @@ DLL files contains executable code that can be used by other applications. When 
 > **Step-1: Identifying vulnerable DLLs that we can Hijack.**
  - Start Application >> Open Procmon tool 
  - Apply three filters in Procmon (Menu Filter -> Filter)
-     1. Process Name = contains = "Select Your Application Name" -> Add
-     2. Path         = contains = ".dll"                         -> Add 
-     3. Result       = contains = "NAME NOT FOUND"               -> Add
-   
- - Click OK for apply filters.
+```
+   1. Process Name = contains = "Select Your Application Name" -> Add
+   2. Path         = contains = ".dll"                         -> Add 
+   3. Result       = contains = "NAME NOT FOUND"               -> Add
+     
+      Click [ OK ] for apply filters.
+```
+     
 > **Step-2: Closed the application and Re-open that application so all the process according to filter will show in** ***Procmon***  
 
 > **Step-3: Now find the Dlls which are trying to load from current working application and is not available** ***(e.g: VERSION.DLL)*** 
