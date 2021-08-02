@@ -4,9 +4,11 @@ DLL files contains executable code that can be used by other applications. When 
 
 ## Tools Required:
 - VMWare, Procmon (Process Monitor), MsfVenom
-- Create two Virtual Machine:
-  - Windows OS (Exe Application Executing)
-  - Kali Linux (Attacker Machine)
+
+## Lab Setup
+- Create two virtual machine:
+  - **Windows OS** for executing exe application *(Victim Machine)*
+  - **Kali Linux** for obtain system access using reverse shell handler *(Attacker Machine)*
 
 ## POC
 
