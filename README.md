@@ -38,7 +38,7 @@ DLL files contains executable code that can be used by other applications. When 
 ```
 ![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/4.jpg)
 
-> **Step-5: Now create reverse shell handler with msfconsole**
+> ### **Step-5: Now create reverse shell handler with msfconsole**
 
 ```
    $ sudo msfconsole
@@ -60,9 +60,9 @@ DLL files contains executable code that can be used by other applications. When 
    
 ![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/5.jpg)
 
-> **Step-6: Reverse shell handler created, now paste malicious DLL(created through Step-4) in to the application directory and launch application**
+> ### **Step-6: Reverse shell handler created successfully, Now paste malicious DLL(which we created through Step-4) in to the application directory & launch the application**
 
 ![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/6.jpg)
 
-   As you can see application is trying to loan the malicious DLL without checking it and we got system reverse shell.
+   *As you can see application is trying to loan the malicious DLL without checking it and we got system reverse shell.*
 
