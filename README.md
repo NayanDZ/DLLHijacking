@@ -12,9 +12,8 @@ DLL files contains executable code that can be used by other applications. When 
 
 ## POC
 
-> **Step-1: Identifying Vulnerable DLLs that we can Hijack.**
- - Start Application
- - Open Procmon tool 
+> **Step-1: Identifying vulnerable DLLs that we can Hijack.**
+ - Start Application >> Open Procmon tool 
  - Apply three filters in Procmon (Menu Filter -> Filter)
      1. Process Name = contains = "Select Your Application Name" -> Add
      2. Path         = contains = ".dll"                         -> Add 
