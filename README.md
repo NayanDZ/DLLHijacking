@@ -16,9 +16,9 @@ DLL files contains executable code that can be used by other applications. When 
  - Start Application >> Open Procmon tool 
  - Apply three filters in Procmon (Menu Filter -> Filter)
 ```
-   1. Process Name = contains = "Select Your Application Name" -> Add
-   2. Path         = contains = ".dll"                         -> Add 
-   3. Result       = contains = "NAME NOT FOUND"               -> Add
+   1. Process Name = contains = "Select Your Application Name" -> [ Add ]
+   2. Path         = contains = ".dll"                         -> [ Add ] 
+   3. Result       = contains = "NAME NOT FOUND"               -> [ Add ]
      
       Click [ OK ] for apply filters.
 ```
