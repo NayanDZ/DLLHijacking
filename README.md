@@ -1,4 +1,4 @@
-# DLL Hijacking
+# DLL⚙️ Hijacking
 
 DLL files contains executable code that can be used by other applications. When an application needs to use this DLL file, it has to search for it if the absolute path is not provided. If an attacker replaces his own DLL file with the name that the application is searching for, then the application loads the attacker’s DLL and executes the malicious code. This is known as DLL Hijacking Attack.
 
