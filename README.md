@@ -3,7 +3,7 @@
 DLL files contains executable code that can be used by other applications. When an application needs to use this DLL file, it has to search for it if the absolute path is not provided. If an attacker replaces his own DLL file with the name that the application is searching for, then the application loads the attacker’s DLL and executes the malicious code. This is known as DLL Hijacking Attack.
 
 ## Tools Required:
-- VMWare, Procmon (Process Monitor), MsfVenom
+- VMWare, Procmon (Process Monitor), MsfVenom, Metasploit, Apache Server
 
 ## Lab Setup
 - Create two virtual machine:
@@ -13,7 +13,7 @@ DLL files contains executable code that can be used by other applications. When 
 ## POC
 
 > ### **Step-1: Identifying vulnerable DLLs that we can Hijack.**
- - Start Application >> Open Procmon tool 
+ - Install Applciation on Windows System >> Start Application >> Open Procmon tool 
  - Apply three filters in Procmon (Menu Filter -> Filter)
 ```
    1. Process Name = contains = "Select Your Application Name" -> [ Add ]
