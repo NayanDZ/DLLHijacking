@@ -7,8 +7,9 @@ DLL files contains executable code that can be used by other applications. When 
 
 ## Lab Setup
 - Create two virtual machine:
-  - **Windows OS** for executing exe application *(Victim Machine)*
-  - **Kali Linux** for obtain system access using reverse shell handler *(Attacker Machine)*
+  - ***Windows OS*** for executing exe application *(Victim Machine)*
+    - Download [**DVTA**](https://github.com/srini0x00/dvta) Vulnerable Thick Client Application developed in C# .NET for learning purpose.  
+  - ***Kali Linux*** for obtain system access using reverse shell handler *(Attacker Machine)*
 
 ## POC
 
@@ -64,5 +65,5 @@ DLL files contains executable code that can be used by other applications. When 
 
 ![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/6.jpg)
 
-   *As you can see application is trying to loan the malicious DLL without checking it and we got system reverse shell.*
+   *As you can see application is trying to load the malicious DLL without checking it and we got system reverse shell.*
 
