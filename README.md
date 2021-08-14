@@ -65,5 +65,5 @@ DLL files contains executable code that can be used by other applications. When 
 
 ![MsfVenom](https://github.com/NayanDZ/DLLHijacking/blob/main/6.jpg)
 
-   *As you can see application is trying to load the malicious DLL without checking it and we got system reverse shell.*
+   **As you can see application is trying to load the malicious DLL without checking it and we got system reverse shell. 👨‍🔧 **
 
